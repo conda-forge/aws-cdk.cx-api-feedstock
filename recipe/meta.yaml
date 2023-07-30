@@ -1,5 +1,5 @@
 {% set name = "aws-cdk.cx-api" %}
-{% set version = "1.204.0" %}
+{% set version = "2.89.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-cdk.cx-api-{{ version }}.tar.gz
-  sha256: 4df1926db277e29c6f7a27430fe623a47aba03299ce55e8395058e55c9f98bf6
+  sha256: f12f7078aabeab658205c3f1c1e5e6035f51f635fa9ee155a4a5a021ccd3065c
 
 build:
   noarch: python
