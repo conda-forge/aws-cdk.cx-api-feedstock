@@ -1,5 +1,5 @@
 {% set name = "aws-cdk.cx-api" %}
-{% set version = "2.125.0" %}
+{% set version = "2.126.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-cdk.cx-api-{{ version }}.tar.gz
-  sha256: 2edfdba188427d67a422a589d87f2b6cc7accfce83a73cf3efa8ca134db9ab47
+  sha256: ff29be8a9d0fd64e92e01cfd4d1bd4528b2cd409274421f1c0a83c4a97112cc3
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - aws-cdk.cloud-assembly-schema ==2.125.0
+    - aws-cdk.cloud-assembly-schema ==2.126.0
     - python-jsii >=1.94.0,<2.0.0
     - publication >=0.0.3
     - typeguard >=2.13.3,<2.14.dev0
