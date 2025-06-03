@@ -1,3 +1,5 @@
+{% set python_min = "3.10" %}
+
 {% set name = "aws-cdk.cx-api" %}
 {% set version = "2.200.0" %}
 
