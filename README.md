@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-cdk.cx-api-
 
 Home: https://github.com/aws/aws-cdk
 
-Package license: BSD-4-Clause AND Apache-2.0
+Package license: MIT AND Apache-2.0
 
 Summary: Cloud executable protocol
 
