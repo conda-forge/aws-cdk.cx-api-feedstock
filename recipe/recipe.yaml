@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  version: "2.268.0"
+
+package:
+  name: aws-cdk.cx-api
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/a/aws-cdk.cx-api/aws_cdk_cx_api-${{ version }}.tar.gz
+  sha256: 5babf5f4944db0baccbfc7866180a7d7280455ca6531518c383c08a13c309f3d
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=75.3.2
+    - python-build >=1.5.0,<1.6.dev0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - aws-cdk.cloud-assembly-schema >=53.25.0
+    - python-jsii >=1.139.0,<2.0.0
+    - publication >=0.0.3
+
+tests:
+  - python:
+      imports:
+        - aws_cdk.cx_api
+        - aws_cdk.cx_api._jsii
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Cloud executable protocol
+  license: MIT AND Apache-2.0
+  license_file:
+    - NOTICE
+    - LICENSE
+  homepage: https://github.com/aws/aws-cdk
+  repository: https://github.com/aws/aws-cdk.git
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
