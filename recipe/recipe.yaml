@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.270.0"
+  version: 2.271.0
 
 package:
   name: aws-cdk.cx-api
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/aws-cdk.cx-api/aws_cdk_cx_api-${{ version }}.tar.gz
-  sha256: 8da439f4feb9d9dd9ca1863b02e3a65587931507e05dccc64ba39f1eb51bf2e6
+  sha256: 48a640339530cfd7a3490d9f8542fa3d510aa812e5843e43930483caa4832520
 
 build:
   number: 0
@@ -24,10 +24,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - aws-cdk.cloud-assembly-schema >=53.25.0
-    - python-jsii >=1.139.0,<2.0.0
+    - aws-cdk.cloud-assembly-schema >=54.24.0
+    - python-jsii >=1.140.0,<2.0.0
     - publication >=0.0.3
-
 tests:
   - python:
       imports:
@@ -36,7 +35,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Cloud executable protocol
