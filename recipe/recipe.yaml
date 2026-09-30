@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.271.0
+  version: "2.272.0"
 
 package:
   name: aws-cdk.cx-api
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/aws-cdk.cx-api/aws_cdk_cx_api-${{ version }}.tar.gz
-  sha256: 48a640339530cfd7a3490d9f8542fa3d510aa812e5843e43930483caa4832520
+  sha256: eaed4a28da1e36e2eca9eea5eb4a5d173e3e62f01c78b05668969e8433adea0d
 
 build:
   number: 0
